@@ -54,7 +54,7 @@ public class RandomDesk {
         try {
             String origin = getOrigin();
             String path = this.getClass().getProtectionDomain().getCodeSource().getLocation().getPath();
-            String _path = new File(path).getParentFile().getPath() + "/output.txt";
+            String _path = new File(path).getParentFile().getParentFile().getPath() + "/output.txt";
 //            System.out.println(_path);
             File out = new File(_path);
             if (!out.exists())
