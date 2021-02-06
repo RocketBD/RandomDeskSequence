@@ -8,7 +8,7 @@ import javafx.scene.control.Label;
  * JavaFX application controller class
  *
  * @author Rocket
- * @version 1.0
+ * @version 2.0
  */
 public class Window {
 	@FXML
@@ -20,7 +20,7 @@ public class Window {
 
 	@FXML
 	void initialize() {
-		if (!RandomDesk.lang)
+		if (!RandomDesk.mainObj.lang)
 			btn.setText("NEXT");
 		index = 0;
 	}
